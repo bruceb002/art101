@@ -1,6 +1,6 @@
 /* this css file will only style the homepage of our site */
 
-/* From GeeksForGeeks: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto */
+/* From W3Schools: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto */
 * {box-sizing: border-box;}
 		body {font-family: Verdana, sans-serif;}
 		.mySlides {display: none;}
@@ -68,7 +68,7 @@
 		  .text {font-size: 11px}
 		}
 
- /* Ends Here */
+ /* W3School code ends Here */
 
 .cat-photo {
   margin: 10px;
