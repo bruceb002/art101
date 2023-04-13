@@ -5,10 +5,12 @@
 		body {font-family: Verdana, sans-serif;}
 		.mySlides {display: none;}
 		img {vertical-align: center;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -15%);}
+			height: 415px;
+			object-fit: contain;
+			position: relative;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -15%);}
 		
 		/* Slideshow container */
 		.slideshow-container {
