@@ -6,6 +6,7 @@
 		.mySlides {display: none;}
 		img {vertical-align: center;
 			height: 415px;
+			max-height: 100%;
 			object-fit: contain;
 			position: relative;
 			top: 50%;
