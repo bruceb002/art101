@@ -2,18 +2,26 @@
 
 /* From W3Schools: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto */
 * {box-sizing: border-box;}
-		body {font-family: Verdana, sans-serif;}
+		body {font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
 		
+		h1 {
+			background: -webkit-linear-gradient(right, #d6f6eb, #599696, #32a86f, #0c4574);
+			background-clip: border-box;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+		}
+
 		.mySlides {display: none;}
 
-		img {vertical-align: center;
-			height: 415px;
+		img {
+			display: block;
+			height: 300px;
 			max-height: 100%;
+			width: auto;
 			object-fit: contain;
-			position: relative;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -12%);}
+			margin: auto;
+		}
 		
 		/* Slideshow container */
 		.slideshow-container {
@@ -23,12 +31,9 @@
 		}
 		
 		/* Caption text */
-		.text {
+		figcaption {
 		  color: #000000;
-		  font-size: 15px;
-		  padding: 8px 12px;
-		  position: absolute;
-		  bottom: 8px;
+		  font-size: 20px;
 		  width: 100%;
 		  text-align: center;
 		}
@@ -47,14 +52,14 @@
 		  height: 10px;
 		  width: 10px;
 		  margin: 0 2px;
-		  background-color: #37b11e;
+		  background-color: #adadad;
 		  border-radius: 50%;
 		  display: inline-block;
 		  transition: background-color 0.6s ease;
 		}
 		
 		.active {
-		  background-color: #0a115f;
+		  background-color: #000000;
 		}
 		
 		/* Fading animation */
@@ -79,3 +84,20 @@
   margin: 10px;
   max-width: 500px;
 }
+
+.rounded_and_row {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.column {
+	width: 120px;
+	height: 120px;
+	overflow: hidden;
+	border-radius: 50%;
+	border: solid 2px #ffffff;
+	float: left;
+	margin-left: 10px;
+}
+
