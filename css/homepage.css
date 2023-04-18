@@ -85,7 +85,7 @@
   max-width: 500px;
 }
 
-.rounded_and_row {
+.rounded {
 	content: "";
 	clear: both;
 	display: table;
@@ -99,5 +99,9 @@
 	border: solid 2px #ffffff;
 	float: left;
 	margin-left: 10px;
+}
+
+.special_title {
+	padding-top: 10px;
 }
 
