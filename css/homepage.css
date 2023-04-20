@@ -25,10 +25,11 @@
 		
 		/* Slideshow container */
 		.slideshow-container {
-		  max-width: 50%;
-		  height: auto;
-		  position: relative;
-		  margin: auto;
+			display: block;
+			max-width: 50%;
+			height: auto;
+			position: relative;
+			margin: auto;
 		}
 		
 		/* Caption text */
