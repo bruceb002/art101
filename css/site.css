@@ -4,8 +4,9 @@
 
 /* we can select an html element tag, in this case "body" will apply to the whole document */
 body {
-  background-image: url('../img/PatternBackground.jpg');
-  background-size:cover;
+  background-image: url('../img/pattern_background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat
 }
 
 /* we can have rules apply to multiple elements at the same time with commas */
@@ -34,5 +35,5 @@ h1 {
   padding: 10px;
   border: solid 1px #000000;
   border-radius: 25px;
-  background-color: rgb(144, 215, 193);
+  background-color: aquamarine;
 }
