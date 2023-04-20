@@ -25,7 +25,8 @@
 		
 		/* Slideshow container */
 		.slideshow-container {
-		  max-width: 1000px;
+		  max-width: 50%;
+		  height: auto;
 		  position: relative;
 		  margin: auto;
 		}
@@ -104,4 +105,9 @@
 .special_title {
 	padding-top: 10px;
 }
+
+p {
+	width: 30%;
+}
+
 
