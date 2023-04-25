@@ -2,7 +2,7 @@
 <html>
 <head>
 	<!-- This title is used for tabs and bookmarks -->
-	<title>Lab X - Subject/Topic</title>
+	<title>Lab 4 - Pseudocoding and Problem-solving</title>
 
 	<!-- Use UTF character set, a good idea with any webpage -->
   	<meta charset="UTF-8" />
@@ -23,25 +23,117 @@
 	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
 	<main id="content">
 		<section>
-			<h1>Lab X - Subject/Topic</h1>
+			<h1>Lab 4 - Pseudocode and Prolem-solving</h1>
 			<div class="minor-section">
 					<h2>Challenge</h2>
-					<p>Restate the challenge of the lab here.</p>
+					<p>It was pretty simple to come up with the high level tasks and even sub-tasks. The only challenge
+						was formatting to outlines.
+					</p>
 			</div>
 
 			<div class="minor-section">
 					<h2>Problems</h2>
-					<p>What problems arose? How did you solve them? </p>
+					<p>A simple problem we did come across was that upon copy and pasting the outlines
+						from VS Code, it would copy a colored background that we couldn't get rid of. 
+						I decided to copy the text in an unexpected surprising medium (a textbox from an online 
+						file difference checker) and paste it back onto the Google Doc, which got rid of the colors. 
+					</p>
 			</div>
 
 			<div class="minor-section">
 					<h2>Reflection</h2>
-					<p>Put your reflections about this assignment here. How did it go? What kind of energy did you put into the assignment? </p>
+					<p>I think this was one of the more straight-forward simple assignments. It went pretty smooth and, well, straightforward.</p>
 			</div>
 
 			<div class="minor-section">
 					<h2>Results</h2>
-					<div id="output"></div>
+					<div id="output">
+						<h3>Everyday Task Pseudocode</h3>
+						<pre>
+<strong>Ironing</strong>
+- Setting up each object component
+	- Board
+		- Unfold ironing board
+		- Make sure its on flat surface + stable
+	- Iron
+		- Optional: adding water (if Iron has feature and clothes need steam)
+		- Plug in/Turn on
+		- Alter settings to appropriate choices
+		- Allow for iron to heat up
+	- Clothes
+		- Make sure first clothing article is laid flat out on board neatly
+- Ironing Process
+	- Repeat for every clothing item:
+	- 	Pick up iron and lay flat on top of clothing item (where necessary/clothes are wrinkled)
+	- 	Repeat until item is ironed out wherever necessary
+			- Continuously move iron w/ consistent pressure across clothing to flatten out
+			- Don’t let iron sit very long
+			- Press steam button if necessary 
+	- Hang up each clothing item to prevent future wrinkles
+- Take-down process
+	- Unplug iron
+	- Allow iron to cool down
+	- Once cooled put iron away
+	- Fold up Ironing board
+						</pre>
+
+						<h3>Simplified Game Pseudcode</h3>
+						<pre>
+							<code>
+//Print board before each turn
+//Accept user input
+//Validate User input
+	//Check that column still has empty slots
+	//Place piece on lowest empty row of column
+//Evaluate possible moves
+	//Check which columns still are empty
+	//Prioritize moves where user might come close to winning
+//Choose computer move
+//Test for win or draw situation
+	//Win: four in a row, horizontally, vertically, or diagonally
+	//draw : board filled up with no four in a row for either player
+							</code>
+						</pre>
+
+						<h3>Expanded Game Pseudocode</h3>
+						<pre>
+							<code>
+//Print board before each turn
+	// Loop through each row
+		// Loop through each space
+			// Print R (red), Y (yellow), or Space
+			// Print a | between each cell
+				// Print a newline at the end
+				// Print a horizontal line between
+//Accept user input
+	// allow user to pick a column to place their piece in
+		// read over user input 
+//Validate User input
+	//Check that column user entered still has empty slots
+		//Loop from bottom up until empty slot is found
+			//Place piece on lowest empty row of column
+		//if no empty slot, this is invalid
+			//have user enter new choice
+	//Loop until User inputs valid input
+//Evaluate possible moves
+	//loop every column left to right and check which columns still have empty slots
+		//mark every lowest possible slot as a valid placement
+//Choose computer move
+	//check for valid placement slots that are adjacent (vertically, horizontally, diagonally) to
+	computers own pieces
+	// place computer piece in random valid slot that is adjacent 
+		// if there are no pieces already placed for computer OR 
+		if there are no valid slots adjacent to computer’s pieces
+			// choose any random valid placement slot
+	//end computer turn
+//Test for win or draw situation
+	// after each turn, loop through board and check for win/draw conditions
+		//Win: four in a row, horizontally, vertically, or diagonally
+		//draw : board filled up with no four in a row for either player
+							</code>
+						</pre>
+					</div>
+					<img src="img/Lab_Four_SS.png" style="height:400px; width: auto;">
 			</div>
 		</section>
 		<nav id="links">

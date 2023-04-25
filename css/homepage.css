@@ -1,15 +1,21 @@
 /* this css file will only style the homepage of our site */
 
-/* From W3Schools: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto */
+/* For Automatic Slideshow
+From W3Schools: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto */
 * {box-sizing: border-box;}
-		body {font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
+		body {font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+			background-image: url('../img/pattern_background.jpg');
+			background-size: cover;
+			background-repeat: no-repeat
+		}
 		
 		h1 {
-			background: -webkit-linear-gradient(right, #d6f6eb, #599696, #32a86f, #0c4574);
+			background: -webkit-linear-gradient(top, #d3a2e6, #3cb0cd);
+			text-align: center;
 			background-clip: border-box;
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
-			font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+			font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 		}
 
 		.mySlides {display: none;}
@@ -21,6 +27,8 @@
 			width: auto;
 			object-fit: contain;
 			margin: auto;
+			border: #000000;
+			border-width: 2px;
 		}
 		
 		/* Slideshow container */
@@ -55,7 +63,7 @@
 		  height: 10px;
 		  width: 10px;
 		  margin: 0 2px;
-		  background-color: #adadad;
+		  background-color: #7d7d7d;
 		  border-radius: 50%;
 		  display: inline-block;
 		  transition: background-color 0.6s ease;
@@ -88,10 +96,20 @@
   max-width: 500px;
 }
 
+#content {
+	margin: 15px;
+	padding: 10px;
+	border: solid 3px #ffffffe4;
+	border-radius: 25px;
+	background-color: hsl(191, 53%, 82%);
+}
+
+/* Icons */
 .rounded {
 	content: "";
 	clear: both;
 	display: table;
+	padding-top: 20px;
 }
 
 .column {
@@ -99,17 +117,14 @@
 	height: 120px;
 	overflow: hidden;
 	border-radius: 50%;
-	border: solid 2px #ffffff;
 	float: left;
 	margin-left: 10px;
 }
 
+
+
 .special_title {
 	padding-top: 10px;
-}
-
-p {
-	width: 30%;
 }
 
 
