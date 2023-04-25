@@ -33,7 +33,6 @@
 								<img src="./img/northern_lights.jpg">
 								<figcaption>Northern Lights in Iceland!</figcaption>
 							</figure>
-							
 						</div>
 
 						<div class="mySlides fade">
@@ -51,60 +50,58 @@
 						</div>
 					</div>
 
-                    <div style="text-align:center">
-                        <span class="dot"></span> 
-                        <span class="dot"></span> 
-                        <span class="dot"></span>
-                    </div>
+					<div style="text-align:center">
+						<span class="dot"></span> 
+						<span class="dot"></span> 
+						<span class="dot"></span>
+					</div>
+					<script src="js/site.js"></script>
+					<!-- W3School Code Ends Here -->
 			</div>
-			<br>
 
-			<script>
-				let slideIndex = 0;
-				showSlides();
-				
-				function showSlides() {
-				  let i;
-				  let slides = document.getElementsByClassName("mySlides");
-				  let dots = document.getElementsByClassName("dot");
-				  for (i = 0; i < slides.length; i++) {
-					slides[i].style.display = "none";  
-				  }
-				  slideIndex++;
-				  if (slideIndex > slides.length) {slideIndex = 1}    
-				  for (i = 0; i < dots.length; i++) {
-					dots[i].className = dots[i].className.replace(" active", "");
-				  }
-				  slides[slideIndex-1].style.display = "block";  
-				  dots[slideIndex-1].className += " active";
-				  setTimeout(showSlides, 2000); // Change image every 2 seconds
-				}
-			</script>
-				
-			<!-- W3School Code Ends Here -->
+			<br>
 			
 			<div>
 				<h2>About Me</h2>
-				<p>Welcome to my website! My name is Bruce and I consider myself to be artistically-inclined, 
-					technologically proficient, athletic, and adventurous. 
-					<br>
-					Above, you can find some pictures of my life.
-					I consider myself to be a super understanding and empathetic person, or so I've been told by all my friends. 
-					<br>
-					Anyways, feel free to explore this site, have fun!
-				</p>
+
+				<hr>
+
+				<div class="subsection">
+					<p>Hi there! My name is Bruce Bai. I am a Junior at UC Santa Cruz majoring in Computer Science. 
+						In my free time, I love singing, drawing, playing badminton, doing digital design, and even programming from time to time. 
+						My favorite singer is Mariah Carey.</p>
+					<p>Anyone who is close to me will even acknowledge that being a fan of Mariah
+						is my entire personality.</p>
+
+					<p>For badminton, I was on my high school's varsity team for all four years. 
+						I did enter some competitions, and have won a couple awards. 
+						I wouldn't say I'm one of the best players at all though. For the most part, I just play for fun at the end of the day.</p>
+
+					<p>Speaking of competitions, I have won awards for my other endeavors as well:
+						I won first place for a coding competition, third place for a singing competition, and 
+						even multiple awards for kung fu from when I was a kid.</p>
+						
+					<p>Fun fact about me: as I adore Mariah Carey, I have also come to learn how to sing her special whistle notes.</p>
+						
+					<p>Anywho, thanks for sticking around for my introduction. Have fun exploring the rest of this page!</p>
+				</div>
 
 				<h2>Music Recommendations</h2>
+
+				<hr>
+
+				<div class="subsection" id="music_links">
 					<a href="https://www.youtube.com/watch?v=zkM4FrylT7g" target="_blank"> Mariah Carey - Fly Like a Bird (Audio)</a><br>
 					<a href="https://www.youtube.com/watch?v=2sap-GTtCiU" target="_blank">Mariah Carey - A No No (Music Video)</a><br>
 					<a href="https://www.youtube.com/watch?v=MPX3qz1ve7M" target="_blank">Tori Kelly - Nobody Love (Music Video)</a><br>
 					<a href="https://www.youtube.com/watch?v=6cfCgLgiFDM" target="_blank">Christina Aguilera - Your Body (Music Video)</a><br>
 					<a href="https://www.youtube.com/watch?v=Uoey4W_3bos" target="_blank">Taylor Swift - Vigilante Shit (Lyrics Video)</a><br>
 					<a href="https://www.youtube.com/watch?v=Zy6vBxqlapw" target="_blank">Kelly Clarkson - Love So Soft (Music Video)</a><br>
+				</div>
 
 				<div class="rounded">
 					<div class="column">
-						<a href="https://mariahcarey.com/" target="_blank"><img src="./img/mariah_icon.jpg" alt="Mariah Carey"></a> 
+						<a href="https://mariahcarey.com/" target="_blank"><img src="./img/mariah_icon.jpg" alt="Mariah Carey"></a>
 					</div>
 
 					<div class="column">
@@ -130,8 +127,12 @@
 		<nav id="links">
 			<div class="special_title">
 				<h2>Assignments</h2>
+
+				<hr>
+
 			</div>
 			<!-- Put links to labs here. -->
+			<div class="special_subsection">
 				<ul>
 					<li><a href="https://github.com/bruceb002/art101/tree/master/lab2" target="_blank">Lab 2</a></li>
 					<li><a href="https://github.com/bruceb002/art101/tree/master/lab3" target="_blank">Lab 3</a></li>
@@ -139,6 +140,8 @@
 					<li><a href="https://github.com/bruceb002/art101/tree/master/lab5" target="_blank">Lab 5</a></li>
 					<li><a href="https://github.com/bruceb002/art101/tree/master/lab6" target="_blank">Lab 6</a></li>
 				</ul>
+			</div>
+
 		</nav>
 	</main>
 </body>
