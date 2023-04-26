@@ -1,9 +1,37 @@
 /* Here we can set styles for this lab page that we don't want to effect others pages */
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+body {
+    background-image: radial-gradient(blue, red);
+}
+
 .minor-section {
     padding: 10px;
     margin-bottom: 10px;
     border: solid 1px #888;
     background-color: #DDD8C4;
+  }
+
+  .container {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border: 2px solid #000000;
+    border-radius: 45%;
+    margin: flex;
+    
+  }
+
+  h1 {
+    padding-left: 20px;
+    -webkit-text-fill-color: azure;
+    text-align: center;
+    margin: auto;
   }

@@ -1,8 +1,22 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+// index.js - Getting started with basic Javascript
+// Author: Bruce Bai
+// Date: April 26, 2023
 
-// Constants
+// Constants/Variables
+make = "Lamborghini";
+model = "Urus";
+color = "red";
+year = 2017
+ownIt = false;
+age = 2023 - year;
+
+//output
+document.writeln("Make: " + make + "<br>");
+document.writeln("Model: " + model + "<br>");
+document.writeln("Color: " + color + "<br>");
+document.writeln("Year: " + year + "<br>");
+document.writeln("Own it: " + ownIt + "<br>");
+document.writeln("age: " + age + "<br>");
 
 // Functions
 
