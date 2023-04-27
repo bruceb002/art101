@@ -1,8 +1,24 @@
 // index.js - purpose and description here
-// Author: Your Name
-// Date:
+// Author: Bruce Bai
+// Date: April 27, 2023
 
-// Constants
+// Constants/Variables
+myTransport = ["car", "bus"];
+
+//was difficult to assign value to age
+//solution: initialize age to null then reset value later
+const myMainRide = {
+  model: "Lamborghini",
+  make: "Urus",
+  color: "red",
+  year: 2017,
+  age: null
+};
+
+myMainRide.age = 2023 - myMainRide.year;
+
+//output 
+document.writeln("My Main Ride: <pre>", JSON.stringify(myMainRide, null, '\n'), "</pre>");
 
 // Functions
 

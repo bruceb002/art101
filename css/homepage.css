@@ -25,7 +25,7 @@ From W3Schools: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sli
 
 img {
 	display: block;
-	height: 300px;
+	height: 350px;
 	max-height: 100%;
 	width: auto;
 	object-fit: contain;
@@ -99,7 +99,7 @@ figcaption {
 	padding: 10px;
 	border: solid 3px #ffffffe4;
 	border-radius: 25px;
-	background-image: -webkit-linear-gradient(bottom, rgb(145, 0, 182), rgb(238, 96, 138), #bdd5ff);
+	background-image: -webkit-linear-gradient(bottom, rgb(145, 0, 182), rgb(238, 96, 138),rgb(80, 26, 255));
 }
 
 /* Icons */
@@ -153,5 +153,17 @@ hr {
 	text-align: center;
 	margin: auto;
 }
+
+iframe {
+	margin: auto; 
+	display: block; 
+	text-align: center;
+	width: 25%;
+	height: auto;
+
+	background: linear-gradient(white, white) padding-box, linear-gradient(to top, rgb(255, 0, 0), rgb(255, 132, 0)) border-box;
+	border-radius: 5px;
+	border: 5px solid transparent;
+  }
 
 
