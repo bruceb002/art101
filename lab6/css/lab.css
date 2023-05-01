@@ -1,9 +1,31 @@
 /* Here we can set styles for this lab page that we don't want to effect others pages */
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+  background-image: linear-gradient(rgb(77, 127, 255), purple);
+}
+
 .minor-section {
-    padding: 10px;
-    margin-bottom: 10px;
     border: solid 1px #888;
     background-color: #DDD8C4;
+    margin-top: 10px;
+    display: block;
+    float: left;
+  }
+
+  img {
+    width: 25%;
+    height: auto;
+    float: right;
+  }
+
+  h1 {
+    color: white;
+    text-align: center;
   }
