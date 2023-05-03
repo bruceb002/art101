@@ -13,7 +13,6 @@ function sortString(param1) {
     //parsing through each character in the string and adding character to array
     for(var i = 0; i < l; i++) {
         container_arr.push(param1.charAt(i));
-        console.log(param1.charAt(i));
     }
 
     //sort array
@@ -31,7 +30,7 @@ function sortString(param1) {
     console.log("Main function started.");
     // the code that makes everything happen
     var userName = window.prompt("Hi. Please enter your name and we can fix it: ");
-    document.writeln("\nHere is your fixed name:|", sortString(userName), "|\n");
+    document.writeln("\nHere is your fixed name:\"", sortString(userName), "\"\n");
   }
   
   // let's get this party started
