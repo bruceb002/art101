@@ -2,21 +2,24 @@
 // Author: Bruce Bai
 // Date: May 2, 2023
 
-// Constants
 
-// Functions
-
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
+//sortString: sorts a string in ascending order
+//param1: the string to be parsed and ordered
 function sortString(param1) {
-    // some code here
     result = "";
     container_arr = [];
     var l = param1.length;
+
+    //parsing through each character in the string and adding character to array
     for(var i = 0; i < l; i++) {
         container_arr.push(param1.charAt(i));
         console.log(param1.charAt(i));
     }
+
+    //sort array
     container_arr.sort();
+
+    //add elements of array in order to resulting string then return result
     for(var j = 0; j < l; j++) {
         result += container_arr[j];
     }
