@@ -7,7 +7,8 @@ let slideIndex = 0;
 let i = 0;
 // Functions
 
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
+// This function increments/resets the count of the images and dots as nessecary
+//in order to transition between them
 function img_slideShow() {
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("dot");
