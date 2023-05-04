@@ -11,6 +11,7 @@ function sortString(param1) {
     var l = param1.length;
 
     //parsing through each character in the string and adding character to array
+    //omit spaces from the get-go
     for(var i = 0; i < l; i++) {
         container_arr.push(param1.charAt(i));
     }

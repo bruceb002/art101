@@ -5,5 +5,14 @@
     padding: 10px;
     margin-bottom: 10px;
     border: solid 1px #888;
-    background-color: #DDD8C4;
+    background-color: #e6c7ff;
+  }
+
+  .name {
+    font-size: 25px;
+    background: -webkit-linear-gradient(right, #46ff74, #401eff);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: url("../../img/pattern_background.jpg");
   }
