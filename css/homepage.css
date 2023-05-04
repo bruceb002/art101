@@ -159,7 +159,7 @@ iframe {
 	display: block; 
 	text-align: center;
 	width: 35%;
-	aspect-ratio: 1/1;
+	aspect-ratio: 5/3;
 
 	background: linear-gradient(white, white) padding-box, linear-gradient(to top, rgb(255, 0, 0), rgb(255, 132, 0)) border-box;
 	border-radius: 5px;
