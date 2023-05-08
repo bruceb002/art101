@@ -23,3 +23,16 @@ body {
   background-color: rgb(177, 255, 251);
   text-align: center;
 }
+
+a {
+  color: rgb(113, 198, 255);
+  transition: color 0.2s ease-in-out;
+}
+/* Set color for links when clicked */
+a.clicked {
+  color: rgb(81, 0, 187);
+}
+
+a:hover {
+  color: rgb(81, 0, 187);
+}

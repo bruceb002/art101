@@ -32,15 +32,19 @@ function img_slideShow() {
   setTimeout(img_slideShow, 3000); // Change image every 3 seconds
 }
 
-function startSlideshow() {
-  console.log("Starting slideshow.");
-  // the code that makes the slideshow happen
-  img_slideShow();
+function link_color() {
+  let links = document.getElementsByTagName("a");
+  for (let i = 0; i < links.length; i++) {
+    links[i].addEventListener("click", function(event) {
+      links[i].classList.add("clicked");
+    });
+  }
 }
 
 function main() {
   console.log("Main function started.");
-  document.addEventListener("DOMContentLoaded", startSlideshow);
+  document.addEventListener("DOMContentLoaded", img_slideShow);
+  document.addEventListener("DOMContentLoaded", link_color);
 }
 
 // let's get this party started
