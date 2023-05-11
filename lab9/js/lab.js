@@ -4,6 +4,19 @@
 
 //Functions
 
+//iterates through the colors of the rainbow upon every click and changes each box
+//to that new color
+function extra_credit() {
+    var color_list = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+    var color_len = color_list.length;
+
+    var every_box = document.getElementsByClassName("minor-section");
+    for(let i = 0; i < every_box.length; i++) {
+        var ind = color_list.indexOf(every_box[i].style.backgroundColor);
+        every_box[i].style.backgroundColor = color_list[(ind + 1) % color_len];
+    }
+}
+
 //creates two new elements and appends them to tag with ID = "output"
 //also changes css of multiple different elements
 function main() {
@@ -25,6 +38,12 @@ function main() {
     document.getElementById("results").style.backgroundColor = "green";
     document.getElementById("output").style.backgroundColor = "cyan";
     document.getElementById("output").style.color = "black";
+
+    var every_box = document.getElementsByClassName("minor-section");
+    for(let i = 0; i < every_box.length; i++) {
+        every_box[i].addEventListener("click", extra_credit);
+    }
+
 }
   
   // let's get this party started
