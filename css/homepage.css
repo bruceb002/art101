@@ -1,17 +1,21 @@
 /* this css file will only style the homepage of our site */
 * {box-sizing: border-box;}
 
-body {font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	background-image: url('../img/pattern_background.jpg');
+body {
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	background-image:url('../img/pattern_background.jpg');
 	background-size: cover;
-	background-repeat: no-repeat
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 h1 {
 	background-clip: border-box;
     -webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	background-image: url('../img/vines.jpeg');
+	text-shadow: 3px 3px #000612, 2px 1px rgb(36, 138, 255);
+	background-image: url('../img/pattern_background.jpg');
+	background-position:top;
 	text-align: center;
 	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	font-size: 40px;
@@ -22,6 +26,20 @@ h2 {
 	margin: auto;
 	margin-top: 25px;
 	text-align: center;
+	-webkit-text-fill-color: #f7faff;
+	text-shadow: -1px -1px 3px rgb(0, 0, 0);
+}
+
+.minor-section h2 {
+	-webkit-text-fill-color: #f2f2f2;
+	text-shadow: -1px -1px 2px rgb(214, 241, 255);
+}
+
+.minor-section {
+	background-image: url("../img/stars.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 /* For Automatic Slideshow
@@ -104,7 +122,12 @@ figcaption {
 	padding: 10px;
 	border: solid 3px #ffffffe4;
 	border-radius: 25px;
-	background-image: -webkit-linear-gradient(bottom, rgb(145, 0, 182), rgb(238, 96, 138),rgb(80, 26, 255));
+	background-image: url('../img/solar.png'), -webkit-linear-gradient(top, rgb(101, 216, 133), rgb(143, 255, 223),rgb(60, 141, 255));
+  	background-position:center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-attachment: fixed;
+	
 }
 
 /* Icons */
@@ -137,12 +160,11 @@ hr {
 }
 
 .special_subsection, div .subsection {
-	background-color: #ffd6ed;
+	background-color: #8cecff;
+	border: 2px ridge;
 	display: block;
 	margin: auto;
-	border-width: 5px;
-	border-color: black;
-	border-radius: 5px;
+	border-radius: 10px;
 	width: 100%;
 	height: 5%;
 	padding: 5px;
@@ -160,7 +182,7 @@ iframe {
 	width: 35%;
 	aspect-ratio: 5/3;
 
-	background: linear-gradient(white, white) padding-box, linear-gradient(to top, rgb(255, 0, 0), rgb(255, 132, 0)) border-box;
+	background: linear-gradient(white, white) padding-box, linear-gradient(to top, rgb(192, 242, 255), rgb(142, 232, 255), rgb(117, 44, 190)) border-box;
 	border-radius: 5px;
 	border: 5px solid transparent;
   }

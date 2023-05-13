@@ -43,8 +43,15 @@ function link_color() {
 
 function main() {
   console.log("Main function started.");
-  document.addEventListener("DOMContentLoaded", img_slideShow);
-  document.addEventListener("DOMContentLoaded", link_color);
+  img_slideShow();
+  link_color();
+  
+  window.addEventListener('DOMContentLoaded', function() {
+    var audio = document.getElementById('myAudio');
+    audio.addEventListener('ended', function() {
+      audio.pause();
+    });
+  });
 }
 
 // let's get this party started
