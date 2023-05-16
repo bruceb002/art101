@@ -28,12 +28,12 @@ h1 {
   text-align: center;
 }
 
+/* Control link colors when clicked + when sitee reloaded*/
 a {
   color: rgb(0, 118, 196);
   transition: color 0.2s ease-in-out;
 }
 
-/* Set color for links when clicked */
 a.clicked {
   color: rgb(81, 0, 187);
 }
@@ -42,6 +42,7 @@ a:hover {
   color: rgb(171, 43, 236);
 }
 
+/* Arrows to navigate Lab sites */
 .arrows {
   text-align: center;
   margin: auto;
