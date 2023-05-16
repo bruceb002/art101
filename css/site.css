@@ -7,6 +7,10 @@ body {
   background-color: rgb(165, 187, 238);
 }
 
+h1 {
+  text-align: center;
+}
+
 /* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
 #content {
   margin: 10px;
@@ -37,3 +41,21 @@ a.clicked {
 a:hover {
   color: rgb(171, 43, 236);
 }
+
+.arrows {
+  text-align: center;
+  margin: auto;
+}
+
+.arrows img {
+  max-width: 8%;
+  height: auto;
+}
+
+#left {
+  float: left
+}
+
+ #right {
+  float: right;
+ }
