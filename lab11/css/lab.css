@@ -1,9 +1,37 @@
 /* Here we can set styles for this lab page that we don't want to effect others pages */
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+body {
+  background-image: url("../../img/pattern_background.jpg");
+}
+
 .minor-section {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #DDD8C4;
-  }
+  aspect-ratio: 6/1;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.minor-section#one {
+    background-color: rgba(93, 255, 255, 0.853);
+}
+
+.minor-section#two {
+    background-color: rgba(137, 119, 255, 0.857);
+}
+
+.minor-section#three {
+    background-color: rgba(123, 255, 152, 0.864);
+}
+
+.minor-section#four {
+  background-color: rgba(255, 255, 255, 0.897);
+}
+
+button {
+  max-width: 7%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-image: -webkit-linear-gradient(top, rgb(101, 216, 133), rgb(143, 255, 223),rgb(60, 141, 255));
+  flex: auto;
+  margin: auto;
+}

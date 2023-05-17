@@ -3,7 +3,7 @@
 
 body {
 	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	background-image:url('../img/pattern_background.jpg');
+	background-image: -webkit-linear-gradient(top, rgb(101, 216, 133), rgb(143, 255, 223),rgb(60, 141, 255));
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -13,7 +13,7 @@ h1 {
 	background-clip: border-box;
     -webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	text-shadow: 3px 3px #000612, 2px 1px rgb(36, 138, 255);
+	text-shadow: 3px 3px #f3f7ff, 2px 1px rgb(141, 194, 255);
 	background-image: url('../img/pattern_background.jpg');
 	background-position:top;
 	text-align: center;
@@ -53,7 +53,6 @@ img {
 	width: auto;
 	object-fit: contain;
 	margin: auto;
-	border: #000000;
 	border-width: 2px;
 }
 
@@ -86,17 +85,17 @@ figcaption {
 
 /* The dots/bullets/indicators */
 .dot {
-	height: 10px;
-	width: 10px;
+	width: 1%;
+	aspect-ratio: 1/1;
 	margin: 0 2px;
-	background-color: #7d7d7d;
+	background-color: hsl(207, 100%, 96%);
 	border-radius: 50%;
 	display: inline-block;
 	transition: background-color 0.6s ease;
 }
 
 .active {
-	background-color: #000000;
+	background-color: #02002d;
 }
 
 /* Fading animation */
@@ -122,10 +121,10 @@ figcaption {
 	padding: 10px;
 	border: solid 3px #ffffffe4;
 	border-radius: 25px;
-	background-image: url('../img/solar.png'), -webkit-linear-gradient(top, rgb(101, 216, 133), rgb(143, 255, 223),rgb(60, 141, 255));
+	background-image: url('../img/solar.png'), url('../img/pattern_background.jpg');
   	background-position:center;
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: cover;
 	background-attachment: fixed;
 	
 }
@@ -160,7 +159,7 @@ hr {
 }
 
 .special_subsection, div .subsection {
-	background-color: #8cecff;
+	background-color: #cdffd3;
 	border: 2px ridge;
 	display: block;
 	margin: auto;
