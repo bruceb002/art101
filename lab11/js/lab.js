@@ -19,18 +19,22 @@ function create_buttons() {
 
   $("#one button").click(() => {
     $("#one .special").toggle();
+    $("#two button").toggleClass('original changed');
   }); 
 
   $("#two button").click(() => {
     $("#two .special").toggle();
+    $("#three button").toggleClass('original changed');
   }); 
 
   $("#three button").click(() => {
     $("#three .special").toggle();
+    $("#four button").toggleClass('original changed');
   }); 
 
   $("#four button").click(() => {
     $("#four .special").toggle();
+    $("#one button").toggleClass('original changed');
   }); 
 
 }

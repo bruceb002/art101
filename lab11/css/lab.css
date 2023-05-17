@@ -35,3 +35,11 @@ button {
   flex: auto;
   margin: auto;
 }
+
+.original {
+  background-image: -webkit-linear-gradient(top, rgb(101, 216, 133), rgb(143, 255, 223),rgb(60, 141, 255));
+}
+
+.changed {
+  background-image: -webkit-linear-gradient(top, rgb(216, 101, 101), rgb(255, 220, 143),rgb(255, 60, 222));
+}
