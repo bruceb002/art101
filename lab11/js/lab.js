@@ -4,9 +4,18 @@
 
 //Functions
 function create_buttons() {
-  $("h2").append("<br>");
-  $("h2").append("<button>");
-  $("button").html("Press");
+  //  1) find section
+  var sect = $("h2");
+
+  //  2) create button
+  var buttonEle = $("<button>");
+
+  //  3) Give text label
+  buttonEle.text("Press");
+
+  //append/add appropriate things to section
+  sect.append("<br>");
+  sect.append(buttonEle);
 
   $("#one button").click(() => {
     $("#one .special").toggle();
