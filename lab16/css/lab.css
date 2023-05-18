@@ -1,0 +1,10 @@
+/* Here we can set styles for this lab page that we don't want to effect others pages */
+
+/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+
+.minor-section {
+  aspect-ratio: 6/1;
+  object-fit: contain;
+  margin-bottom: 10px;
+  background-color: aliceblue;
+}
