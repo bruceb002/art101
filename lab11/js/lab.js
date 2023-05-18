@@ -1,6 +1,6 @@
-// index.js - Learning how to process a sumbission form with a button
+// index.js - Learning how to alter buttons using JQUERY
 // Author: Bruce Bai
-// Date: May 14, 2023
+// Date: May 17, 2023
 
 //Functions
 function create_buttons() {
