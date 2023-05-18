@@ -24,7 +24,7 @@ function create_buttons() {
 
   $("#two button").click(() => {
     $("#two .special").toggle();
-    $("#three button").toggleClass('original changed');
+    $("#one button").toggleClass('original changed');
   }); 
 
   $("#three button").click(() => {
@@ -34,7 +34,7 @@ function create_buttons() {
 
   $("#four button").click(() => {
     $("#four .special").toggle();
-    $("#one button").toggleClass('original changed');
+    $("#three button").toggleClass('original changed');
   }); 
 
 }
