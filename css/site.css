@@ -19,7 +19,8 @@ h1 {
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 .minor-section {
-  padding: 10px;
+  padding-top: 10px;
+  margin-bottom: 5px;
   display: block;
   border: solid 1px #ffffff;
   border-radius: 3px;
