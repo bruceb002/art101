@@ -9,6 +9,10 @@ body {
 	background-repeat: no-repeat;
 }
 
+.subsection#intro {
+	color: rgb(243, 253, 255);
+}
+
 h1 {
 	background-clip: border-box;
     -webkit-background-clip: text;
@@ -48,7 +52,7 @@ h2 {
 /* For Automatic Slideshow
 From W3Schools: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto */
 .mySlides {
-	z-index: 1;
+	z-index: 2;
 	display: none;
 }
 
@@ -166,7 +170,8 @@ hr {
 }
 
 .special_subsection, div .subsection {
-	background-color: rgb(238, 205, 255);
+	background-color: rgb(153, 35, 208);
+	background-image: url("../img/stars.png");
 	border: 2px ridge;
 	display: block;
 	margin: auto;
@@ -179,6 +184,7 @@ hr {
 #music_links {
 	text-align: center;
 	margin: auto;
+	padding-bottom: 10px;
 }
 
 iframe {

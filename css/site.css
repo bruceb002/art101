@@ -30,7 +30,7 @@ h1 {
 
 /* Control link colors when clicked + when sitee reloaded*/
 a {
-  color: rgb(0, 118, 196);
+  color: rgb(89, 189, 255);
   transition: color 0.2s ease-in-out;
 }
 
