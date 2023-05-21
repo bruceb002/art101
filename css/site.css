@@ -19,7 +19,7 @@ h1 {
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 .minor-section {
-  padding: 5px;
+  padding: 25px;
   display: block;
   border: solid 1px #ffffff;
   border-radius: 3px;
@@ -34,18 +34,18 @@ a {
   transition: color 0.2s ease-in-out;
 }
 
-a.clicked {
-  color: rgb(81, 0, 187);
+a:hover {
+  color: rgb(228, 174, 255);
 }
 
-a:hover {
-  color: rgb(171, 43, 236);
+a.clicked {
+  color: rgb(152, 73, 255);
 }
 
 /* Arrows to navigate Lab sites */
 .arrows {
   display: block;
-  margin: 25px;
+  margin: auto;
   text-align: center;
 }
 
