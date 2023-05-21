@@ -41,17 +41,23 @@ function link_color() {
   }
 }
 
+function video_control() {
+  var video = document.getElementById("myVideo");
+  var but = document.getElementById("starter_button");
+
+  video.volume = 0.2;
+
+  but.addEventListener("click", function() {
+    video.play();
+    but.remove();
+  }, { once: true });
+}
+
 function main() {
   console.log("Main function started.");
+  video_control();
   img_slideShow();
   link_color();
-  
-  window.addEventListener('DOMContentLoaded', function() {
-    var audio = document.getElementById('myAudio');
-    audio.addEventListener('ended', function() {
-      audio.pause();
-    });
-  });
 }
 
 // let's get this party started

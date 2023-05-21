@@ -45,8 +45,7 @@ a:hover {
 /* Arrows to navigate Lab sites */
 .arrows {
   display: block;
-  margin: 20px;
-  padding-bottom: 5px;
+  margin: 25px;
   text-align: center;
 }
 
@@ -62,3 +61,5 @@ a:hover {
  #right {
   float: right;
  }
+ 
+
