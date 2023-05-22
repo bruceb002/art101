@@ -6,19 +6,8 @@
 function sortingHat(name) {
   var length = name.length;
   var remainder = length % 4;
-  var assignment = "";
-
-  if(remainder == 0) {
-    assignment = "Gryffindor";
-  } else if(remainder == 1) {
-    assignment = "Ravenclaw";
-  }else if(remainder == 2) {
-    assignment =  "Slytherin";
-  } else {
-    assignment = "Hufflepuff";
-  }
-  
-  return assignment;
+  var houses = ["Gryffindor", "Ravenclaw", "Slytherin", "Hufflepuff"];
+  return houses[remainder];
 }
 
 function main() {
