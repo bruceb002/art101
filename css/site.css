@@ -4,7 +4,7 @@
 
 /* we can select an html element tag, in this case "body" will apply to the whole document */
 body {
-  background-color: rgb(165, 187, 238);
+  background-color: rgb(156, 186, 255);
 }
 
 h1 {
@@ -21,10 +21,8 @@ h1 {
 .minor-section {
   padding: 10px;
   display: block;
-  border: solid 1px #ffffff;
   border-radius: 3px;
   width: 70%;
-  margin: auto;
   margin-top: 15px;
   text-align: center;
 }
@@ -47,11 +45,12 @@ a.clicked {
 .arrows {
   display: block;
   margin: auto;
+  margin-bottom: 10px;
   text-align: center;
 }
 
 .arrows img {
-  max-width: 8%;
+  max-width: 5%;
   height: auto;
 }
 
