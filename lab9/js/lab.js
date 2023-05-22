@@ -31,7 +31,7 @@ function main() {
     outputEl.appendChild(new1El);
     outputEl.appendChild(new2El);
 
-    document.getElementById("content").style.backgroundColor = "indigo";
+    document.getElementById("content").style.backgroundColor = "#f8e08e";
     document.getElementById("challenges").style.backgroundColor = "red";
     document.getElementById("problems").style.backgroundColor = "orange";
     document.getElementById("reflections").style.backgroundColor = "yellow";

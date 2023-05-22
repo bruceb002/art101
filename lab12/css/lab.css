@@ -5,8 +5,9 @@
 .minor-section {
   aspect-ratio: 6/1;
   object-fit: contain;
-  margin-bottom: 10px;
-  background-color: aliceblue;
+  background-color: rgb(221, 196, 255);
+  text-align: center;
+
 }
 
 input {

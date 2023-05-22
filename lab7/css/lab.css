@@ -5,7 +5,8 @@
     padding: 10px;
     margin-bottom: 10px;
     border: solid 1px #888;
-    background-color: #e6c7ff;
+    background-color: #7c28c0;
+    text-align: center;
   }
 
   .name {
@@ -13,5 +14,5 @@
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-image: url("../../img/pattern_background.jpg");
+    background-image: url("../../img/vines.jpeg");
   }
