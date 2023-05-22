@@ -12,5 +12,13 @@
 input {
   width: 40%;
   max-width: 30%;
-  color: rgb(197, 197, 197);
+  color: rgb(160, 160, 160);
+}
+
+.grey {
+  color: grey;
+}
+
+.black {
+  color: black;
 }

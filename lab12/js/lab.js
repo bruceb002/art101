@@ -27,6 +27,9 @@ function main() {
   var field = document.getElementById("input");
   field.addEventListener("click", () => {
     field.value = "";
+    $(document).ready(() => {
+      $("input").toggleClass("grey black");
+    });
   }, { once: true });
 
   var button = document.getElementById("button");
