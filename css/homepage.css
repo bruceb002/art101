@@ -41,7 +41,7 @@ h2 {
 	height: 30%;
 	position: relative;
 	overflow: hidden;
-	justify-content: center;
+	align-content: center;
 }
 
 /* For Automatic Slideshow
