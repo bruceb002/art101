@@ -8,3 +8,9 @@
   margin-bottom: 10px;
   background-color: aliceblue;
 }
+
+input {
+  width: 40%;
+  max-width: 30%;
+  color: rgb(197, 197, 197);
+}
