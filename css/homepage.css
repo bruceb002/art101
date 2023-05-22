@@ -52,12 +52,13 @@ From W3Schools: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sli
 }
 
 img {
-	display: block;
+	display: flex;
+	justify-self: center;
+	margin: auto;
+	object-fit: contain;
 	height: 350px;
 	max-height: 100%;
 	width: auto;
-	object-fit: contain;
-	margin: auto;
 	border-width: 2px;
 }
 
