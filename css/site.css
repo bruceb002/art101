@@ -9,6 +9,7 @@ body {
 
 h1 {
   text-align: center;
+  margin: 5px;
 }
 
 /* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
@@ -17,15 +18,24 @@ h1 {
   padding: 10px;
 }
 
+section {
+  display: flex;
+  flex-direction: column; /* Arrange boxes vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+}
+
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 .minor-section {
-  padding: 10px;
-  border-radius: 3px;
   width: 70%;
-  max-width: 70%;
-  display: block;
-  align-self: center;
-	margin: auto;
+
+  border-radius: 5px;
+
+  margin-bottom: 10px;
+  padding: 5px;
+
+  content: "";
+  clear: both;
 }
 
 /* Control link colors when clicked + when sitee reloaded*/
@@ -43,20 +53,21 @@ a.clicked {
 }
 
 /* Arrows to navigate Lab sites */
+
 .arrows {
-  display: block;
-  margin: auto;
-  margin-bottom: 10px;
+  display: inline-block;
+  margin-bottom: 2%;
   text-align: center;
 }
 
 .arrows img {
-  max-width: 5%;
-  height: auto;
+  max-height: 50px;
+  margin-left: 55px;
+  margin-right: 55px;
 }
 
 #left {
-  float: left
+  float: left;
 }
 
  #right {

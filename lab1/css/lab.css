@@ -2,13 +2,12 @@
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 .minor-section {
-    margin-bottom: 10px;
     border: solid 1px #888888;
     background-color: #ffecd7;
+    text-align: center;
+    align-self: center;
   }
 
-  h1 {
-    display: flex;
-    justify-content: center;
-    margin: auto;
+  h2 {
+    text-align: center;
   }
