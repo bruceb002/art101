@@ -10,7 +10,12 @@
 
   pre {
     text-align: left;
-    text-size-adjust: contain;
     width: 100%;
     max-width: 100%;
+  }
+
+  img {
+    display: flex;
+    justify-content: center;
+    margin: auto;
   }

@@ -24,14 +24,14 @@ function sortString(param1) {
         result += container_arr[j];
     }
     return result;
-
   }
+
+  var userName = window.prompt("Hi. Please enter your name and we can fix it: ");
+  document.writeln("\nHere is your fixed name:\"", sortString(userName), "\"\n");
   
   function main() {
     console.log("Main function started.");
     // the code that makes everything happen
-    var userName = window.prompt("Hi. Please enter your name and we can fix it: ");
-    document.writeln("\nHere is your fixed name:\"", sortString(userName), "\"\n");
   }
   
   // let's get this party started

@@ -55,9 +55,11 @@ a.clicked {
 /* Arrows to navigate Lab sites */
 
 .arrows {
-  display: inline-block;
-  margin-bottom: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  margin-bottom: 2%;
 }
 
 .arrows img {
