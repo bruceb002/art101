@@ -2,7 +2,7 @@
 <html>
 <head>
 	<!-- This title is used for tabs and bookmarks -->
-	<title>Lab 13 - </title>
+	<title>Lab 13 - Loops</title>
 
 	<!-- load jQuery library to make javascript easier (must be above our lab js)-->
 	<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
@@ -24,7 +24,7 @@
 	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
 	<main id="content">
 		<section>
-			<h1>Lab 13 - </h1>
+			<h1>Lab 13 - Loops</h1>
 			<div class="arrows"> 
 				<div id="left">
 					<a href="https://bruceb002.github.io/art101/lab12/"><img src="../img/left_arrow.png"></img></a>
@@ -38,26 +38,34 @@
 			</div>
 
 			<div class="minor-section">
-					<h2>Challenge</h2>
-
-					<div class="special">
-						<p></p>
-					</div>
+				<h2>Challenge</h2>
+				<p>For the issues I had, I wouldn't consider them challenges. I would consider them problems.
+					Overall, I don't think I had any true challenges with this assignment.
+				</p>
 			</div>
 
 			<div class="minor-section">
-					<h2>Problems</h2>
-					<p></p>
+				<h2>Problems</h2>
+				<p>The only problem I had was figuring out what the proper syntax was in outputting my Results
+					to the output div. I tried using the jquery version, but it didn't print out. I looked at the console but 
+					there were no noticeable issues. I then tried to print out the value of my result, and it was as I expected it
+					to be. I then noticed that compared to how the Canvas Instructions did it, I forgot to put the hashtag 
+					in front of 'output', so it was finding an output tag, not an output id.
+				</p>
+				 <p>Once I figured that out, I realized that the output was all mushed up together with no line breakage, so it was messy.
+					I was iniitally doing "\n" which stands for newline feed, but I guess it might not have worked as I wanted it to.
+					I ended up just following the professor's code and using a break (br) instead.
+				 </p>
 			</div>
 
 			<div class="minor-section">
-					<h2>Reflection</h2>
-					<p></p>
+				<h2>Reflection</h2>
+				<p>Lots of fizz buzz booms :')</p>
 			</div>
 
-			<div class="minor-section" id="four">
-					<h2>Results</h2>
-					<p></p>
+			<div class="minor-section">
+				<h2>Results</h2>
+				<div id="output"></div>
 			</div>
 		</section>
 		<nav id="links">
