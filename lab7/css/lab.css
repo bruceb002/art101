@@ -5,7 +5,7 @@
     padding: 10px;
     margin-bottom: 10px;
     border: solid 1px #888;
-    background-color: #7c28c0;
+    background-color: #540f8b;
     text-align: center;
   }
 
@@ -15,4 +15,11 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-image: url("../../img/vines.jpeg");
+  }
+
+  h2, p {
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-linear-gradient(bottom, rgb(255, 178, 83), rgb(255, 0, 98));
   }

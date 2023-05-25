@@ -18,19 +18,18 @@ body {
   }
   .container img {
     position: absolute;
-    background-size: contain;
     top:0;
     left: 70%;
     
-    max-height: 100px;
+    max-width: 15%;
     margin: 20px;
     border: 2px solid #000000;
-    border-radius: 45%;
+    border-radius: 30%;
     display: flex;
   }
 
   h1 {
     color: azure;
     text-align: center;
-    margin-right: auto;
+    margin: auto;
   }

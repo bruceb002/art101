@@ -7,7 +7,7 @@
 //iterates through the colors of the rainbow upon every click and changes each box
 //to that new color
 function extra_credit() {
-    var color_list = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+    var color_list = ["red", "orange", "yellow", "green", "cyan", "#D6AEFF", "violet"];
     var color_len = color_list.length;
 
     var every_box = document.getElementsByClassName("minor-section");
@@ -31,13 +31,12 @@ function main() {
     outputEl.appendChild(new1El);
     outputEl.appendChild(new2El);
 
-    document.getElementById("content").style.backgroundColor = "#f8e08e";
+    document.getElementById("content").style.backgroundColor = "#FFF2B6";
     document.getElementById("challenges").style.backgroundColor = "red";
     document.getElementById("problems").style.backgroundColor = "orange";
     document.getElementById("reflections").style.backgroundColor = "yellow";
     document.getElementById("results").style.backgroundColor = "green";
-    document.getElementById("output").style.backgroundColor = "cyan";
-    document.getElementById("output").style.color = "black";
+    document.getElementById("results").style.color = "black";
 
     var every_box = document.getElementsByClassName("minor-section");
     for(let i = 0; i < every_box.length; i++) {
