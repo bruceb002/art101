@@ -45,7 +45,7 @@ function video_control() {
   var video = document.getElementById("myVideo");
   var but = document.getElementById("starter_button");
 
-  video.volume = 0.2;
+  video.volume = 0.4;
 
   but.addEventListener("click", function() {
     video.play();

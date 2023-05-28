@@ -3,27 +3,49 @@
 // Date: May 24, 2023
 
 function FizzBuzzBoom(maxNum, factors, factor_outs) {
-  var res = "";
   var l = factors.length;
-  if(l != factor_outs.length || maxNum == "") {
-    $("#output").html("You did not fill in one or more of the forms!");
+  var empty = false;
+  var nonNum = false;
+  var regex=/^[0-9]+$/;
+
+  if(maxNum == "") {
+    empty = true;
+  }
+  if(maxNum.match(regex) == null && maxNum != "") {
+    nonNum = true;
+  }
+
+  for(let i = 0; i < factors.length; i++) {
+    if(factors[i] == "") {
+      empty = true;
+    }
+    if(factors[i].match(regex) == null && factors[i] != "") {
+      nonNum = true;
+    }
+  }
+
+  for(let i = 0; i < factor_outs.length; i++) {
+    if(factor_outs[i] == "") {
+      empty = true;
+    }
+  }
+
+  if(empty || nonNum) {
+    $("#output").html("Error: <br>");
+    if(empty) {
+      $("#output").append("You did not fill in one or more of the forms! <br>");
+    } 
+    if(nonNum) {
+      $("#output").append("One of the forms is not a valid number!");
+    }
     return;
   }
 
-  
-
+  var res = "";
   for(var i = 1; i <= maxNum; i++) {
     res += i.toString() + ": ";
     for(var j = 0; j < l; j++) {
-      if(factors[j] == "") {
-        $("#output").html("You did not fill in one or more of the forms!");
-        return;
-      }
       if(i % factors[j] == 0) {
-        if(factor_outs[j] == "") {
-          $("#output").html("You did not fill in one or more of the forms!");
-          return;
-        }
         res += factor_outs[j];
       }
     }

@@ -6,4 +6,10 @@
   aspect-ratio: 6/1;
   object-fit: contain;
   background-color: aliceblue;
+  text-align: center;
+}
+
+img {
+  max-width: 50%;
+  margin-bottom: 10px;
 }
