@@ -6,12 +6,6 @@ body {
   background-image: linear-gradient(rgb(77, 127, 255), purple);
 }
 
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .minor-section {
     border: solid 1px #888;
     background-color: #DDD8C4;
@@ -19,14 +13,10 @@ body {
   }
 
   .container img {
-    position: absolute;
-    top:0;
-    left: 65%;
-    max-width: 15%;
-
-    margin: 15px;
-    padding: 5px;
+    max-width: 20%;
     display: flex;
+    justify-content: center;
+    margin: auto;
   }
 
   h1 {

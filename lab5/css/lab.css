@@ -11,21 +11,14 @@ body {
     text-align: center;
   }
 
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
   .container img {
-    position: absolute;
-    top:0;
-    left: 70%;
-    
-    max-width: 15%;
-    margin: 20px;
+    max-width: 20%;
     border: 2px solid #000000;
     border-radius: 30%;
     display: flex;
+    margin: auto;
+    justify-content: center;
+
   }
 
   h1 {
