@@ -54,6 +54,12 @@ function do_API() {
   });
 }
 
+function extractVideoId(url) {
+  var regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/;
+  var match = url.match(regExp);
+  return (match && match[7].length === 11) ? match[7] : '';
+}
+
 function do_spatial_API() {
   $.ajax({
     url: 'https://api.nasa.gov/planetary/apod',
@@ -62,26 +68,37 @@ function do_spatial_API() {
         api_key: "lChAgt2FdUEEGnqKMj9ivx5eUF8TuwUmetM9HEIC"
     },
     success: function(data) {
-        // Process the response and display the APOD image
         var title = data.title;
+        $("#apod-container").html(`<h3>${title}</h3>`);
+
+        //get the visual to show on screen
         var Url = data.url;
-        console.log(data);
-        var explanation = data.explanation;
-        
-        $('#apod-container').html(`
-            <h3>${title}</h3>
-            <p>${explanation}</p>
-        `);
-        
         if(data.media_type == "video") {
-          $('#apod-container').append(`
-            <video> 
-              <source src=${Url}>
-            </video>
-          `);
+           // Extract the video ID from the URL
+          var videoId = extractVideoId(Url);
+
+          // Construct the YouTube embedded URL
+          var embedUrl = 'https://www.youtube.com/embed/' + videoId;
+
+          // Create an iframe element
+          var iframe = document.createElement('iframe');
+          iframe.setAttribute('width', '560');
+          iframe.setAttribute('height', '315');
+          iframe.setAttribute('src', embedUrl);
+          iframe.setAttribute('frameborder', '0');
+          iframe.setAttribute('allowfullscreen', '');
+
+          // Append the iframe to the video container
+          var Container = document.getElementById('apod-container');
+          Container.appendChild(iframe);
         } else {
           $('#apod-container').append(`<img src=${Url}>`);
         }
+
+        var explanation = data.explanation;
+        $('#apod-container').append(`
+            <p>${explanation}</p>
+        `);
         
     },
     error: function() {
@@ -92,28 +109,7 @@ function do_spatial_API() {
 
 function main() {
   console.log("Main function started.");
-	
-	
-	
-	
-	
-
-
-
   // the code that makes everything happen
-  document.cookie = "PREF=; SameSite=None; Secure";
-  document.cookie = "_ga=; SameSite=None; Secure";
-  document.cookie = "SID=; SameSite=None; Secure";
-
-  document.cookie = "__Secure-1PSID=; SameSite=None; Secure";
-  document.cookie = "HSID=; SameSite=None; Secure";
-  document.cookie = "SSID=; SameSite=None; Secure";
-
-  document.cookie = "APISID=; SameSite=None; Secure";
-  document.cookie = "SAPISID=; SameSite=None; Secure";
-  document.cookie = "__Secure-1PAPISID=; SameSite=None; Secure";
-  document.cookie = "SIDCC=; SameSite=None; Secure";
-  document.cookie = "__Secure-1PSIDCC=; SameSite=None; Secure";
 
   $("#activate").on("click", do_API);
   $("#activate_space").on("click", do_spatial_API);
