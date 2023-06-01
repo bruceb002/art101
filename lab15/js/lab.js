@@ -61,6 +61,7 @@ function extractVideoId(url) {
 }
 
 function do_spatial_API() {
+  $("#activate_space").remove();
   $.ajax({
     url: 'https://api.nasa.gov/planetary/apod',
     method: 'GET',
