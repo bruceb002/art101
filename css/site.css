@@ -67,15 +67,7 @@ a.clicked {
   max-height: 50px;
 }
 
-#left {
-  margin-bottom: 20px;
-}
-
-#title {
-  margin-bottom: 20px;
-}
-
-#right {
+#left, #right, #title {
   margin-bottom: 20px;
 }
 
