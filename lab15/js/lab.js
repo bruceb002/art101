@@ -92,7 +92,29 @@ function do_spatial_API() {
 
 function main() {
   console.log("Main function started.");
+	
+	
+	
+	
+	
+
+
+
   // the code that makes everything happen
+  document.cookie = "PREF=; SameSite=None; Secure";
+  document.cookie = "_ga=; SameSite=None; Secure";
+  document.cookie = "SID=; SameSite=None; Secure";
+
+  document.cookie = "__Secure-1PSID=; SameSite=None; Secure";
+  document.cookie = "HSID=; SameSite=None; Secure";
+  document.cookie = "SSID=; SameSite=None; Secure";
+
+  document.cookie = "APISID=; SameSite=None; Secure";
+  document.cookie = "SAPISID=; SameSite=None; Secure";
+  document.cookie = "__Secure-1PAPISID=; SameSite=None; Secure";
+  document.cookie = "SIDCC=; SameSite=None; Secure";
+  document.cookie = "__Secure-1PSIDCC=; SameSite=None; Secure";
+
   $("#activate").on("click", do_API);
   $("#activate_space").on("click", do_spatial_API);
 }
