@@ -24,7 +24,7 @@ h2 {
   margin-bottom: 10px;
 }
 
-img {
+img, video {
   max-width: 50%;
 }
 
