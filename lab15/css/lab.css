@@ -7,6 +7,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .minor-section {
   aspect-ratio: 6/1;
   object-fit: contain;
@@ -15,6 +16,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
+  color: white;
 }
 
 h2 {
@@ -22,8 +24,8 @@ h2 {
   margin-bottom: 10px;
 }
 
-.minor-section {
-  color: white;
+img {
+  max-width: 50%;
 }
 
 .choices {
