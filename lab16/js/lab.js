@@ -11,7 +11,7 @@ function get_comic_data() {
       var comicObj = data;
       
       // Process the data and add it to your webpage
-      $('#output').append('<h1>' + comicObj.title + '</h1>');
+      $('#output').append('<h3>' + comicObj.title + '</h3>');
       $('#output').append('<img src="' + comicObj.img + '" alt="' + comicObj.alt + '" title="' + comicObj.alt + '">');
     },
     error: function(xhr, status, error) {
