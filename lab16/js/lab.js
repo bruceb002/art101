@@ -2,16 +2,18 @@
 // Author: Bruce Bai
 // Date: June 5, 2023
 
-function get_comic_data() {
+function get_comic_data(link) {
   $.ajax({
-    url: 'https://xkcd.com/info.0.json',
+    url: link,
     method: 'GET',
     dataType: 'json',
     success: function(data) {
-      var comicObj = data;
+
+      //1 --> 2785 (inclusive)
+      comicObj = data;
       
       // Process the data and add it to your webpage
-      $('#output').append('<h3>' + comicObj.title + '</h3>');
+      $('#output').html('<h3>' + comicObj.title + '</h3>');
       $('#output').append('<img src="' + comicObj.img + '" alt="' + comicObj.alt + '" title="' + comicObj.alt + '">');
     },
     error: function(xhr, status, error) {
@@ -23,8 +25,37 @@ function get_comic_data() {
 
 function main() {
   console.log("Main function started.");
-  // the code that makes everything happen
-  get_comic_data();
+  // initialize variables
+  var num = 1;
+  var link = "";
+
+  //deal with previous button
+  var prev_button = document.getElementsByClassName("myButton")[0];
+  prev_button.addEventListener("click", function() {
+    if(num == 1) {
+      $("#special").html("There is no previous comic.");
+      return;
+    }
+    $("#special").html("");
+    num -= 1;
+    link = "https://xkcd.com/" + JSON.stringify(num) + '/info.0.json';
+    get_comic_data(link);
+    
+  })
+
+  //deal with next button
+  var next_button = document.getElementsByClassName("myButton")[1];
+  next_button.addEventListener("click", function() {
+    if(num == 2785) {
+      $("#special").html("There is no next comic.");
+      return;
+    }
+    $("#special").html("");
+    num += 1;
+    link = "https://xkcd.com/" + JSON.stringify(num) + '/info.0.json';
+    get_comic_data(link);
+  })
+  
 }
 
   // let's get this party started

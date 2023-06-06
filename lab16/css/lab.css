@@ -19,3 +19,26 @@ h3 {
   margin: 0px;
 }
 
+.button-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 100px;
+  margin: auto;
+  max-width: 25%;
+}
+
+#myButton {
+  text-align: center;
+}
+
+button {
+  height: 25px;
+  max-height: 25px;
+}
+
+#special {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
