@@ -93,7 +93,7 @@ function do_spatial_API() {
           var Container = document.getElementById('apod-container');
           Container.appendChild(iframe);
         } else {
-          $('#apod-container').append(`<img src=${Url}>`);
+          $('#apod-container').append(`<img src=\"${Url}\">`);
         }
 
         var explanation = data.explanation;
