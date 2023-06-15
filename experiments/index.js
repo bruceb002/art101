@@ -5,6 +5,7 @@ function main() {
         html2canvas($("#download_here"), {
             onrendered: function(canvas) {
                 theCanvas = canvas;
+                document.body.appendChild(canvas);
                 canvas.toBlob(function (blob) {
                     saveAs(blob, "Dashboard.png");
                 });
