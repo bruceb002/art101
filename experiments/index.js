@@ -2,7 +2,6 @@ function main() {
     $("#myButton").click(() => {
         html2canvas(document.getElementById("download_here")).then(canvas => {
             theCanvas = canvas;
-            $("section").appendChild(canvas);
             canvas.toBlob(function (blob) {
                 saveAs(blob, "Dashboard.png");
             });
