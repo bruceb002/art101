@@ -1,4 +1,4 @@
-import html2canvas from 'html2canvas';
+import html2canvas from '../node_modules/html2canvas/dist/html2canvas.js';
 
 function main() {
     console.log("Wth, is it even here?");
