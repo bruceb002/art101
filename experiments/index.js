@@ -1,17 +1,17 @@
 function main() {
-    console.log("Wth, is it even here?");
-    $("#myButton").click(() => {
-        console.log("It made it here!");
-        html2canvas($("#download_here"), {
-            onrendered: function(canvas) {
-                console.log("It also made it here!");
-                console.log("Let's see what canvas is: ", JSON.stringify(canvas));
-                theCanvas = canvas;
-                $("section").appendChild(canvas);
-                canvas.toBlob(function (blob) {
-                    saveAs(blob, "Dashboard.png");
-                });
-            }
+    document.addEventListener('DOMContentLoaded', function() {
+        $("#myButton").click(() => {
+            html2canvas($("#download_here"), {
+                onrendered: function(canvas) {
+                    console.log("It also made it here!");
+                    console.log("Let's see what canvas is: ", JSON.stringify(canvas));
+                    theCanvas = canvas;
+                    $("section").appendChild(canvas);
+                    canvas.toBlob(function (blob) {
+                        saveAs(blob, "Dashboard.png");
+                    });
+                }
+            });
         });
     });
 }
