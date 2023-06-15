@@ -64,7 +64,7 @@ function do_spatial_API() {
   $("#activate_space").remove();
   $.ajax({
     url: 'https://api.nasa.gov/planetary/apod',
-    method: 'GET',
+    type: 'GET',
     data: {
         api_key: "lChAgt2FdUEEGnqKMj9ivx5eUF8TuwUmetM9HEIC"
     },
