@@ -1,6 +1,7 @@
 import html2canvas from 'html2canvas';
 
 function main() {
+    console.log("Wth, is it even here?");
     $("#myButton").click(() => {
         console.log("It made it here!");
         html2canvas($("#download_here"), {
