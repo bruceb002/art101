@@ -19,19 +19,31 @@
 	<!-- <script type="text/javascript" src="./js/lab.js" DEFER></script> -->
 </head>
 <body>
+	<div id="navbar">
+		<div id="empty">
+
+		</div>
+
+		<div id="name">
+			<h1>Bruce Bai</h1>
+		</div>
+		
+		<div id="socials">
+			<a class="social_link" href="https://www.instagram.com/bruceonaroll/" target="_blank"><img src="./img/insta-logo.png"></a>
+			<a class="social_link" href="https://www.youtube.com/channel/UC2aPZuAG1XwXGgcGPfEfsEA" target="_blank"><img src="./img/youtube-logo.png"></a> 
+			<a class="social_link" href="https://www.tiktok.com/@bruceonaroll?is_from_webapp=1&sender_device=pc" target="_blank"><img src="./img/tiktok-logo.png"></a> 
+			<a class="social_link" href="https://www.facebook.com/bruce.bai.9212" target="_blank"><img src="./img/fb-logo.png"></a> 
+			<a class="social_link" href="https://twitter.com/brucebai222" target="_blank"><img src="./img/twitter-logo.png"></a> 
+		</div>
+	</div>
 	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
 	<main id="content">
 		<section>
-			<h1>The Aesthetic World of Bruce</h1>
-			<button type="button" id="starter_button"> 
-				<p id="prompt">Let's get started! Click here.</p>
-			</button>
+			<h2>Bruce's Activities</h2>
 			<div class="minor-section">
-				<!-- Note that all filenames use lowercase and no spaces -->
-				<video id="myVideo" loop>
+				<video id="myVideo" loop muted autoplay>
 					<source src="./video/pendulum.mp4" type="video/mp4">
 				</video>
-				<h2>Bruce's Activities</h2>
 				<!-- From W3Schools: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto -->
 				<div class="slideshow-container">
 					<div class="mySlides fade">
@@ -81,23 +93,42 @@
 				<hr>
 
 				<div class="subsection" id="intro">
-					<p>Hi there! My name is Bruce Bai. I am a Junior at UC Santa Cruz majoring in Computer Science. 
-						In my free time, I love singing, drawing, playing badminton, doing digital design, and even programming from time to time. 
-						My favorite singer is Mariah Carey.</p>
-					<p>Anyone who is close to me will even acknowledge that being a fan of Mariah
-						is my entire personality.</p>
-
-					<p>For badminton, I was on my high school's varsity team for all four years. 
-						I did enter some competitions, and have won a couple awards. 
-						I wouldn't say I'm one of the best players at all though. For the most part, I just play for fun at the end of the day.</p>
-
-					<p>Speaking of competitions, I have won awards for my other endeavors as well:
-						I won first place for a coding competition, third place for a singing competition, and 
-						even multiple awards for kung fu from when I was a kid.</p>
-						
-					<p>Fun fact about me: as I adore Mariah Carey, I have also come to learn how to sing her special whistle notes.</p>
-						
-					<p>Anywho, thanks for sticking around for my introduction. Have fun exploring the rest of this page!</p>
+					<p>Hi, my name is Bruce Bai. I am a Junior at UC Santa Cruz majoring in Computer Science.
+						I have experience interning at Best Egg, a financial company focused on providing
+						flexible loan and credit card services to its customers, in the technical team.
+						I also have experience with a hackathon, in which I worked with my team to produce
+						a rideshare website aimed for UC Santa Cruz students to use.
+					</p>
+					<p>
+						For my first internship at Best Egg, I worked in the financial loss team by 
+						migrating code from the SAS system to the SQL system. In addition to 
+						migrating the code, I ended up needing to do data checking and cleaning
+						by adding my own code and implenting new logic. At the end, I was able to 
+						speed up the process by approximately 20 times.
+					</p>
+					<p>
+						For my second internship at Best Egg, I worked with the tech team by
+						helping migrate between different chatbot services. I also helped with the 
+						migration of deployment services.
+					</p>
+					<p>
+						For the hackathon, my team used Google Maps API to gather trip data and allow the user
+						to view a map of their trip route. My part in this project was to program the entirety of the 
+						main page - where users have the ability to view their trips. I needed to pull the trip
+						information from the database we used and do some calculations as nessecary. It took us
+						two days and one all nighter to finish the project. At the end, we won first place as 
+						our project appeared to have had the most potential for an official service, and adhered
+						to the theme of the competition the best (help solve a issue either locally at UCSC or globally
+						so that the sense of unity among a community may be improved). 
+					</p>
+					<p>You've gotten to know the technical side of me, but I am no robot. Here's to getting to know me as a person as well.
+						I love to sing, draw, photoshop, and play badminton in my free time. For singing, I have won third place in a competition.
+						I sang Mariah Carey songs all the way through. Speaking of which, I am the biggest Mariah fan. I even learned to replicate
+						her precious whistle notes! For drawing, I took formal lessons throughout high school, and I do have some impressive pieces
+						to show for it. For photoshop, I used it a lot when I was a part of the yearbook club in high school. Finally, for badminton,
+						I was able to make the varsity team in highschool every year. I was also able to make the competitive team in college.
+					</p>
+					<p>Great, now you know who I am! I hope you enjoyed my introduction, and feel free to explore more of my website!</p>
 				</div>
 
 				<h2>Music Recommendations</h2>
@@ -137,35 +168,6 @@
 			</div>
 
 		</section>
-		<nav id="links">
-			<div class="special_title">
-				<h2>Assignments</h2>
-
-				<hr>
-
-			</div>
-			<!-- Put links to labs here. -->
-			<div class="special_subsection">
-				<ul>
-					<li><a href="https://bruceb002.github.io/art101/lab2/" target="_blank">Lab 2</a></li>
-					<li><a href="https://bruceb002.github.io/art101/lab3/" target="_blank">Lab 3</a></li>
-					<li><a href="https://bruceb002.github.io/art101/lab4/" target="_blank">Lab 4</a></li>
-					<li><a href="https://bruceb002.github.io/art101/lab5/" target="_blank">Lab 5</a></li>
-					<li><a href="https://bruceb002.github.io/art101/lab6/" target="_blank">Lab 6</a></li>
-					<li><a href="https://bruceb002.github.io/art101/lab7/" target="_blank">Lab 7</a></li>
-					<li><a href="https://bruceb002.github.io/art101/lab8/" target="_blank">Lab 8</a></li>
-					<li><a href="https://bruceb002.github.io/art101/lab9/" target="_blank">Lab 9</a></li>
-					<li><a href="https://bruceb002.github.io/art101/lab10/" target="_blank">Lab 10</a></li>
-					<li><a href="https://bruceb002.github.io/art101/lab11/" target="_blank">Lab 11</a></li>
-					<li><a href="https://bruceb002.github.io/art101/lab12/" target="_blank">Lab 12</a></li>
-					<li><a href="https://bruceb002.github.io/art101/lab13/" target="_blank">Lab 13</a></li>
-					<li><a href="https://bruceb002.github.io/art101/lab14/" target="_blank">Lab 14</a></li>
-					<li><a href="https://bruceb002.github.io/art101/lab15/" target="_blank">Lab 15</a></li>
-					<li><a href="https://bruceb002.github.io/art101/lab16/" target="_blank">Lab 16</a></li>
-				</ul>
-			</div>
-
-		</nav>
 	</main>
 </body>
 </html>
